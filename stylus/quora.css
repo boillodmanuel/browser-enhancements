@@ -1,0 +1,5 @@
+@-moz-document domain("quora.com") {
+.link_overlay {
+    opacity: 0.2 !important;
+}
+}
