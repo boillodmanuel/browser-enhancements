@@ -1,0 +1,21 @@
+@-moz-document domain("mon-expert-en-gestion.fr") {
+/* Facturation */
+tr.etat-color-regle td:first-child span.etat-color-texte {
+    background-color: #1bbc9b;
+    color: #fff;
+}
+tr.etat-color-valide td:first-child span.etat-color-texte {
+    color: #4ea9fd;
+    border-left-color: #4ea9fd !important;
+}
+
+/* Note de frais */
+.rca-icon-commentaire.commented {
+    color: #009dff;
+}
+.rca-icon.rca-icon-importer {
+    background-color: #f76262 !important;
+    color: white !important;
+}
+
+}
