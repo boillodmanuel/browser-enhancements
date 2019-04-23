@@ -1,0 +1,17 @@
+@-moz-document url-prefix("https://mail.google.com/mail/u/0/") {
+body > div > .nH {
+    width: 70% !important;
+    align-self: center;
+    margin-left: 15%;
+}
+
+/* snooze */
+.TO > .aHS-bu1 .qj, .bqX.brv, .brW {
+    background-image: url(https://ssl.gstatic.com/bt/C3341AA7A1A076756462EE2E5CD71C11/1x/ic_upcoming_clr_24dp_r5.png);
+}
+
+/* archive */
+.ar8, .bqX.brq {
+    background-image: url(https://ssl.gstatic.com/bt/C3341AA7A1A076756462EE2E5CD71C11/2x/ic_done_clr_24dp_r4_2x.png);
+}
+}
