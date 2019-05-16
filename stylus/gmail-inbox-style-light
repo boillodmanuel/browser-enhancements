@@ -3,10 +3,16 @@
  * Saved at https://github.com/boillodmanuel/browser-enhancements/blob/master/stylus/gmail-inbox-style-light
  */
 
+/* main window */
 body > div > .nH {
     max-width: 1280px !important;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* right sidebar zindex */
+.bq9.buW {
+    z-index: 8;
 }
 
 /* snooze */
