@@ -15,6 +15,15 @@ body > div > .nH {
     z-index: 8;
 }
 
+/* Highlight all messages in left bar */
+.aHS-aHO .qj {
+    box-shadow: 0px 0px 10px 2px #fe0000;
+    border-radius: 2px;
+}
+.aHS-aHO .nU>.J-Ke.n0 {
+    color: #3912fb;
+}
+
 /* snooze */
 .TO > .aHS-bu1 .qj, .bqX.brv, .brW {
     background-image: url(https://ssl.gstatic.com/bt/C3341AA7A1A076756462EE2E5CD71C11/1x/ic_upcoming_clr_24dp_r5.png);
@@ -27,6 +36,50 @@ body > div > .nH {
 
 /* hide spam notification flag */
 .TN.bzz.aHS-bnv > div > .bsU {
+    display: none;
+}
+
+/** HIDE SIDEBAR */ 
+
+/*
+- Menu wide: .aeN:not(.bhZ)
+- menu closed : .bhZ:not(.bym)
+- menu closed + mouse hover: .bhZ .bym
+*/
+
+/* Hide gmail text */
+.gb_ja:not(.gb_ka) .gb_uc .gb_Qb {
+    display: none;
+}
+
+/* Sidebar width */
+.aeN:not(.bhZ) {
+    width: 80px !important;
+    min-width: 80px !important;
+}
+
+.aeN:not(.bhZ) .z0>.L3 {
+    -webkit-border-radius: 28px;
+    border-radius: 28px;
+    font-size: 0;
+    height: 56px;
+    padding: 0;
+    width: 56px;
+}
+
+/* Hide sidebar text */
+.aeN:not(.bhZ) .TN.bzz > .aio /* mains entries */, 
+.aeN:not(.bhZ) .ah9>.CJ /* show more */,
+.aeN:not(.bhZ) .CL>.CK /* gérer les libellés */ {
+    display: none !important;
+}
+
+/* Hide menu entries when menu is wide */
+.aeN:not(.bhZ) .TN.bzz.aHS-bnw /* stars */,
+.aeN:not(.bhZ) .TN.bzz.aHS-bns /* important */,
+.aeN:not(.bhZ) .TN.bzz.aHS-aHP /* hangout */,
+.aeN:not(.bhZ) .byl.aJZ.a0L /* categories */, 
+.aeN:not(.bhZ) .zw /* labels */{
     display: none;
 }
 }
