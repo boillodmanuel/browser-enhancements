@@ -1,4 +1,10 @@
 @-moz-document url-prefix("https://docs.google.com/document/") {
+/** 
+ * Install from online source.
+ * Source: https://userstyles.org/styles/171305
+ * Dark Theme for Google Docs [V1.4.3] by Lekrkoekj
+ */
+
 #docs-chrome {
 	background: #333 none repeat scroll 0% 0% !important;
 	color: #DDD !important;
