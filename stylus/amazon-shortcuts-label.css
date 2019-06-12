@@ -1,0 +1,35 @@
+@-moz-document domain("console.aws.amazon.com") {
+/* Hide pin button */
+a#nav-shortcutMenu {
+    display:none !important;
+}
+
+/* Change label */
+li[data-service-id] .service-label {
+    display: none !important;
+}
+li[data-service-id] a:after {
+    content: "TODO";
+    display: inline-block;
+    color: #fff;
+    margin-left: 5px;
+}
+
+
+li[data-service-id=ec2] a:after {
+    content: "EC2"
+}
+li[data-service-id=vpc] a:after {
+    content: "VPC"
+}
+li[data-service-id=s3] a:after {
+    content: "S3"
+}
+li[data-service-id=cp] a:after {
+    content: "Pipeline"
+}
+li[data-service-id=eb] a:after {
+    content: "Beanstalk"
+}
+
+}
