@@ -5,10 +5,10 @@ a#nav-shortcutMenu {
 }
 
 /* Change label */
-li[data-service-id] .service-label {
+#nav-shortcutBar li[data-service-id] .service-label {
     display: none !important;
 }
-li[data-service-id] a:after {
+#nav-shortcutBar li[data-service-id] a:after {
     content: "TODO";
     display: inline-block;
     color: #fff;
@@ -16,19 +16,19 @@ li[data-service-id] a:after {
 }
 
 
-li[data-service-id=ec2] a:after {
+#nav-shortcutBar li[data-service-id=ec2] a:after {
     content: "EC2"
 }
-li[data-service-id=vpc] a:after {
+#nav-shortcutBar li[data-service-id=vpc] a:after {
     content: "VPC"
 }
-li[data-service-id=s3] a:after {
+#nav-shortcutBar li[data-service-id=s3] a:after {
     content: "S3"
 }
-li[data-service-id=cp] a:after {
+#nav-shortcutBar li[data-service-id=cp] a:after {
     content: "Pipeline"
 }
-li[data-service-id=eb] a:after {
+#nav-shortcutBar li[data-service-id=eb] a:after {
     content: "Beanstalk"
 }
 
