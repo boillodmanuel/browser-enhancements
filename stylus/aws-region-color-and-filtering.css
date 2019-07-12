@@ -1,0 +1,33 @@
+@-moz-document domain("console.aws.amazon.com") {
+/* Unspecified region = red */ 
+body #awsgnav #nav-menubar, body #awsgnav #nav-menubar .nav-menu, #nav-menu-right
+{
+    background-color: hsl(352, 74%, 48%);
+}
+
+/* Region filtering */ 
+a.region.available-region[data-region-id=eu-west-2],
+a.region.available-region[data-region-id^=us-],
+a.region.available-region[data-region-id^=ap-],
+a.region.available-region[data-region-id^=ca-],
+a.region.available-region[data-region-id^=eu-central-],
+a.region.available-region[data-region-id^=eu-north-],
+a.region.available-region[data-region-id^=sa-]
+{
+    display: none !important
+}
+}
+
+@-moz-document domain("eu-west-3.console.aws.amazon.com") {
+body #awsgnav #nav-menubar, body #awsgnav #nav-menubar .nav-menu, #nav-menu-right
+  {
+    background-color: #232f3e;
+  }
+}
+
+@-moz-document domain("eu-west-1.console.aws.amazon.com") {
+body #awsgnav #nav-menubar, body #awsgnav #nav-menubar .nav-menu, #nav-menu-right
+  {
+    background-color: #0c8426;
+  }
+}
