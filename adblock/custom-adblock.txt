@@ -1,0 +1,5 @@
+[Adblock Plus 2.0]
+! Example: https://easylist.to/
+! Format cheatsheet: https://adblockplus.org/filter-cheatsheet
+! -----------------------General advert blocking filters-----------------------!
+@@www.maaf.fr/client/fr/maaf/relationpers/accueilinternet/util/*.js^
