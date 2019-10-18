@@ -1,4 +1,3 @@
-@-moz-document url-prefix("https://mail.google.com/mail/u/0/") {
 /*
  * Saved at https://github.com/boillodmanuel/browser-enhancements/blob/master/stylus/gmail-inbox-style-light
  */
@@ -37,6 +36,33 @@ body > div > .nH {
 /* hide spam notification flag */
 .TN.bzz.aHS-bnv > div > .bsU {
     display: none;
+}
+
+/** No Messages */ 
+.cf.TB {
+    display: block;
+}
+.cf.TB tbody:not(:empty) {
+    text-align: center;
+    display: block;
+    height: calc( 100vh - 200px );
+}
+.TD {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+
+    background-repeat: no-repeat;
+    background-image: url('https://github.com/boillodmanuel/browser-enhancements/raw/master/stylus/inbox-sun.png');
+    background-position-x: center;
+    background-position-y: top 10px;
+}
+.Tm .TC {
+    font-size:0;
 }
 
 /** HIDE SIDEBAR */ 
@@ -81,5 +107,4 @@ body > div > .nH {
 .aeN:not(.bhZ) .byl.aJZ.a0L /* categories */, 
 .aeN:not(.bhZ) .zw /* labels */{
     display: none;
-}
 }
