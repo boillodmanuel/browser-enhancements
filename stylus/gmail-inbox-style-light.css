@@ -1,3 +1,4 @@
+@-moz-document url-prefix("https://mail.google.com/mail/u/0/") {
 /*
  * Saved at https://github.com/boillodmanuel/browser-enhancements/blob/master/stylus/gmail-inbox-style-light
  */
@@ -113,4 +114,5 @@ body > div > .nH {
 .aeN:not(.bhZ) .byl.aJZ.a0L /* categories */, 
 .aeN:not(.bhZ) .zw /* labels */{
     display: none;
+}
 }
