@@ -112,7 +112,26 @@ body > div > .nH {
 .aeN:not(.bhZ) .TN.bzz.aHS-bns /* important */,
 .aeN:not(.bhZ) .TN.bzz.aHS-aHP /* hangout */,
 .aeN:not(.bhZ) .byl.aJZ.a0L /* categories */, 
-.aeN:not(.bhZ) .zw /* labels */{
+.aeN:not(.bhZ) .zw .TO /* labels */{
     display: none;
 }
+.aeN:not(.bhZ) .zw .TO .aio /* labels title */{
+    display: none;
+}
+.aeN:not(.bhZ) .zw .TO[data-tooltip="PRO"] /* label PRO */ {
+    display: block
+}
+/** Display PRO label */
+/**
+.aeN:not(.bhZ) .zw .TO[data-tooltip="PRO"] .qj {
+    background-image: url(https://github.com/boillodmanuel/browser-enhancements/raw/master/stylus/case-dark.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+.aeN:not(.bhZ) .zw .TO[data-tooltip="PRO"] .qj::before,
+.aeN:not(.bhZ) .zw .TO[data-tooltip="PRO"] .qj::after{
+    display: none;
+}
+*/
 }
