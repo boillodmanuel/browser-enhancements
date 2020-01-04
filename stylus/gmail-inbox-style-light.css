@@ -86,7 +86,8 @@ body > div > .nH {
 }
 
 /* Sidebar width */
-.aeN:not(.bhZ) {
+.aeN:not(.bhZ),
+.aeN:not(.bhZ) .wT {
     width: 80px !important;
     min-width: 80px !important;
 }
@@ -98,6 +99,16 @@ body > div > .nH {
     height: 56px;
     padding: 0;
     width: 56px;
+}
+
+/* Active menu entries with rounded background */
+.aeN:not(.bhZ) .TN {
+    padding: 0 6px;
+}
+.aeN:not(.bhZ) .TK .TO {
+    border-radius: 16px;
+    width: 32px;
+    margin-left: 20px;
 }
 
 /* Hide sidebar text */
@@ -118,11 +129,10 @@ body > div > .nH {
 .aeN:not(.bhZ) .zw .TO .aio /* labels title */{
     display: none;
 }
-.aeN:not(.bhZ) .zw .TO[data-tooltip="PRO"] /* label PRO */ {
+/** Display PRO label */
+.aeN:not(.bhZ) .zw .TO[data-tooltip="PRO"] {
     display: block
 }
-/** Display PRO label */
-/**
 .aeN:not(.bhZ) .zw .TO[data-tooltip="PRO"] .qj {
     background-image: url(https://github.com/boillodmanuel/browser-enhancements/raw/master/stylus/case-dark.png);
     background-position: center;
@@ -133,5 +143,5 @@ body > div > .nH {
 .aeN:not(.bhZ) .zw .TO[data-tooltip="PRO"] .qj::after{
     display: none;
 }
-*/
+
 }
