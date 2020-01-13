@@ -126,9 +126,15 @@ body > div > .nH {
 .aeN:not(.bhZ) .zw .TO /* labels */{
     display: none;
 }
+/** Highligt SPAM */
+.aeN:not(.bhZ) .TO[data-tooltip="Spam"] .TN {
+    background-color: red;
+}
+/** Hide All Labels */
 .aeN:not(.bhZ) .zw .TO .aio /* labels title */{
     display: none;
 }
+
 /** Display PRO label */
 .aeN:not(.bhZ) .zw .TO[data-tooltip="PRO"] {
     display: block
