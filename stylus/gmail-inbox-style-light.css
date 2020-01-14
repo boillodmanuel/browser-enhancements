@@ -127,8 +127,11 @@ body > div > .nH {
     display: none;
 }
 /** Highligt SPAM */
-.aeN:not(.bhZ) .TO[data-tooltip="Spam"] .TN {
+.aeN:not(.bhZ) .TO[data-tooltip="Spam"] .TN { /* when spam icon is in upper half of the menu */
     background-color: red;
+}
+.aeN:not(.bhZ) .HwgYue .TO[data-tooltip="Spam"] .TN { /* not when spam icon is in lower half of the menu */
+    background-color: transparent;
 }
 /** Hide All Labels */
 .aeN:not(.bhZ) .zw .TO .aio /* labels title */{
