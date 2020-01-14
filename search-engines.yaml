@@ -1,0 +1,18 @@
+Conjugaison
+  c
+  https://langue-francaise.tv5monde.com/decouvrir/dictionnaire?mot=%s#conjugaison
+dico
+  di
+  http://dictionnaire.tv5.org/dictionnaire/definition/%s
+dico anglais
+  da
+  http://www.wordreference.com/definition/%s
+trad anglaise
+  ta
+  http://www.wordreference.com/fren/%s
+trad francaise
+  tf
+  http://www.wordreference.com/enfr/%s
+trad google
+  tr
+  http://translate.google.fr/?source=osdd#auto|auto|%s
