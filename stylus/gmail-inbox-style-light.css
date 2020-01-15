@@ -1,156 +1,165 @@
 @-moz-document url-prefix("https://mail.google.com/mail/u/0/") {
-/*
- * Saved at https://github.com/boillodmanuel/browser-enhancements/blob/master/stylus/gmail-inbox-style-light
- */
-
-/* main window */
-body > div > .nH {
-    max-width: 1280px !important;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* dark theme - emails backgrounds */
-.yO {
-    background: rgb(16, 16, 16);
-}
-
-/* right sidebar zindex */
-.bq9.buW {
-    z-index: 8;
-}
-
-/* Highlight all messages in left bar */
-.aHS-aHO .qj {
-    box-shadow: 0px 0px 10px 2px #fe0000;
-    border-radius: 2px;
-}
-.aHS-aHO .nU>.J-Ke.n0 {
-    color: #3912fb;
-}
-
-/* snooze */
-.TO > .aHS-bu1 .qj, .bqX.brv, .brW {
-    background-image: url(https://ssl.gstatic.com/bt/C3341AA7A1A076756462EE2E5CD71C11/1x/ic_upcoming_clr_24dp_r5.png);
-}
-
-/* archive */
-.ar8, .bqX.brq {
-    background-image: url(https://ssl.gstatic.com/bt/C3341AA7A1A076756462EE2E5CD71C11/2x/ic_done_clr_24dp_r4_2x.png);
-}
-
-/* hide spam notification flag */
-.TN.bzz.aHS-bnv > div > .bsU {
-    display: none;
-}
-
-/** No Messages */ 
-.cf.TB {
-    display: block;
-}
-.cf.TB tbody:not(:empty) {
-    text-align: center;
-    display: block;
-    height: calc( 100vh - 200px );
-    /* background-color: #7baaf7; */
-}
-.TD {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-
-    height: 298px;
-    width: 298px;
-    border-radius: 50%;
-
-    background-repeat: no-repeat;
-    background-image: url('https://github.com/boillodmanuel/browser-enhancements/raw/master/stylus/inbox-sun.png');
-    background-position-x: center;
-    background-position-y: top 10px;
-}
-.Tm .TC {
-    font-size:0;
-}
-
-/** HIDE SIDEBAR */ 
-
-/*
-- Menu wide: .aeN:not(.bhZ)
-- menu closed : .bhZ:not(.bym)
-- menu closed + mouse hover: .bhZ .bym
-*/
-
-/* Hide gmail text */
-.gb_ja:not(.gb_ka) .gb_uc .gb_Qb {
-    display: none;
-}
-
-/* Sidebar width */
-.aeN:not(.bhZ),
-.aeN:not(.bhZ) .wT {
-    width: 80px !important;
-    min-width: 80px !important;
-}
-
-.aeN:not(.bhZ) .z0>.L3 {
-    -webkit-border-radius: 28px;
-    border-radius: 28px;
-    font-size: 0;
-    height: 56px;
-    padding: 0;
-    width: 56px;
-}
-
-/* Active menu entries with rounded background */
-.aeN:not(.bhZ) .TN {
-    padding: 0 6px;
-}
-.aeN:not(.bhZ) .TK .TO {
-    border-radius: 16px;
-    width: 32px;
-    margin-left: 20px;
-}
-
-/* Hide sidebar text */
-.aeN:not(.bhZ) .TN.bzz > .aio /* mains entries */, 
-.aeN:not(.bhZ) .ah9>.CJ /* show more */,
-.aeN:not(.bhZ) .CL>.CK /* gérer les libellés */ {
-    display: none !important;
-}
-
-/* Hide menu entries when menu is wide */
-.aeN:not(.bhZ) .TN.bzz.aHS-bnw /* stars */,
-.aeN:not(.bhZ) .TN.bzz.aHS-bns /* important */,
-.aeN:not(.bhZ) .TN.bzz.aHS-aHP /* hangout */,
-.aeN:not(.bhZ) .byl.aJZ.a0L /* categories */, 
-.aeN:not(.bhZ) .zw .TO /* labels */{
-    display: none;
-}
-/** Highligt SPAM */
-.aeN:not(.bhZ) .TO[data-tooltip="Spam"] .TN { /* when spam icon is in upper half of the menu */
-    background-color: red;
-}
-.aeN:not(.bhZ) .HwgYue .TO[data-tooltip="Spam"] .TN { /* not when spam icon is in lower half of the menu */
-    background-color: transparent;
-}
-/** Hide All Labels */
-.aeN:not(.bhZ) .zw .TO .aio /* labels title */{
-    display: none;
-}
-
-/** Display PRO label */
-.aeN:not(.bhZ) .zw .TO[data-tooltip="PRO"] {
-    display: block
-}
-.aeN:not(.bhZ) .zw .TO[data-tooltip="PRO"] .qj {
-    background-image: url(https://github.com/boillodmanuel/browser-enhancements/raw/master/stylus/case-dark.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 20px;
-}
-.aeN:not(.bhZ) .zw .TO[data-tooltip="PRO"] .qj::before,
-.aeN:not(.bhZ) .zw .TO[data-tooltip="PRO"] .qj::after{
-    display: none;
-}
-
-}
+    /*
+     * Saved at https://github.com/boillodmanuel/browser-enhancements/blob/master/stylus/gmail-inbox-style-light
+     */
+    
+    /* main window */
+    body > div > .nH {
+        max-width: 1280px !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    /* dark theme - emails backgrounds */
+    .yO {
+        background: rgb(16, 16, 16);
+    }
+    
+    /* right sidebar zindex */
+    .bq9.buW {
+        z-index: 8;
+    }
+    
+    /* Highlight all messages in left bar */
+    .aHS-aHO .qj {
+        box-shadow: 0px 0px 10px 2px #fe0000;
+        border-radius: 2px;
+    }
+    .aHS-aHO .nU>.J-Ke.n0 {
+        color: #3912fb;
+    }
+    
+    /* snooze */
+    .TO > .aHS-bu1 .qj, .bqX.brv, .brW {
+        background-image: url(https://ssl.gstatic.com/bt/C3341AA7A1A076756462EE2E5CD71C11/1x/ic_upcoming_clr_24dp_r5.png);
+    }
+    
+    /* archive */
+    .ar8, .bqX.brq {
+        background-image: url(https://ssl.gstatic.com/bt/C3341AA7A1A076756462EE2E5CD71C11/2x/ic_done_clr_24dp_r4_2x.png);
+    }
+    
+    /* hide spam notification flag */
+    .TN.bzz.aHS-bnv > div > .bsU {
+        display: none;
+    }
+    
+    /** No Messages */ 
+    .cf.TB {
+        display: block;
+    }
+    .cf.TB tbody:not(:empty) {
+        text-align: center;
+        display: block;
+        height: calc( 100vh - 200px );
+        /* background-color: #7baaf7; */
+    }
+    .TD {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    
+        height: 298px;
+        width: 298px;
+        border-radius: 50%;
+    
+        background-repeat: no-repeat;
+        background-image: url('https://github.com/boillodmanuel/browser-enhancements/raw/master/stylus/inbox-sun.png');
+        background-position-x: center;
+        background-position-y: top 10px;
+    }
+    .Tm .TC {
+        font-size:0;
+    }
+    
+    /** HIDE SIDEBAR */ 
+    
+    /*
+    - Menu wide: .aeN:not(.bhZ)
+    - menu closed : .bhZ:not(.bym)
+    - menu closed + mouse hover: .bhZ .bym
+    */
+    
+    /* Hide gmail text */
+    .gb_ja:not(.gb_ka) .gb_uc .gb_Qb {
+        display: none;
+    }
+    
+    /* Sidebar width */
+    .aeN:not(.bhZ),
+    .aeN:not(.bhZ) .wT {
+        width: 80px !important;
+        min-width: 80px !important;
+    }
+    
+    .aeN:not(.bhZ) .z0>.L3 {
+        -webkit-border-radius: 28px;
+        border-radius: 28px;
+        font-size: 0;
+        height: 56px;
+        padding: 0;
+        width: 56px;
+    }
+    
+    /* Active menu entries with rounded background */
+    .aeN:not(.bhZ) .TN {
+        padding: 0 6px;
+    }
+    .aeN:not(.bhZ) .TK .TO {
+        border-radius: 16px;
+        width: 32px;
+        margin-left: 20px;
+    }
+    
+    /* Hide sidebar text */
+    .aeN:not(.bhZ) .TN.bzz > .aio /* mains entries */, 
+    .aeN:not(.bhZ) .ah9>.CJ /* show more */,
+    .aeN:not(.bhZ) .CL>.CK /* gérer les libellés */ {
+        display: none !important;
+    }
+    
+    /* Hide menu entries when menu is wide */
+    .aeN:not(.bhZ) .TN.bzz.aHS-bnw /* stars */,
+    .aeN:not(.bhZ) .TN.bzz.aHS-bns /* important */,
+    .aeN:not(.bhZ) .TN.bzz.aHS-aHP /* hangout */,
+    .aeN:not(.bhZ) .byl.aJZ.a0L /* categories */, 
+    .aeN:not(.bhZ) .zw .TO /* labels */{
+        display: none;
+    }
+    /** Highligt SPAM */
+    .aeN:not(.bhZ) .TO[data-tooltip="Spam"] .TN { /* when spam icon is in upper half of the menu */
+        background-color: red;
+    }
+    .aeN:not(.bhZ) .HwgYue .TO[data-tooltip="Spam"] .TN { /* not when spam icon is in lower half of the menu */
+        background-color: transparent;
+    }
+    /** Hide All Labels */
+    .aeN:not(.bhZ) .zw .TO .aio /* labels title */{
+        display: none;
+    }
+    
+    /** Display PRO and Family label */
+    .aeN:not(.bhZ) .zw .TO[data-tooltip="PRO"],
+    .aeN:not(.bhZ) .zw .TO[data-tooltip="Family"] {
+        display: block
+    }
+    .aeN:not(.bhZ) .zw .TO[data-tooltip="PRO"] .qj,
+    .aeN:not(.bhZ) .zw .TO[data-tooltip="Family"] .qj {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 20px;
+    }
+    .aeN:not(.bhZ) .zw .TO[data-tooltip="PRO"] .qj::before,
+    .aeN:not(.bhZ) .zw .TO[data-tooltip="PRO"] .qj::after,
+    .aeN:not(.bhZ) .zw .TO[data-tooltip="Family"] .qj::before,
+    .aeN:not(.bhZ) .zw .TO[data-tooltip="Family"] .qj::after{
+        display: none;
+    }
+    .aeN:not(.bhZ) .zw .TO[data-tooltip="PRO"] .qj {
+        background-image: url(https://github.com/boillodmanuel/browser-enhancements/raw/master/stylus/assets/case-dark.png);
+    }
+    .aeN:not(.bhZ) .zw .TO[data-tooltip="Family"] .qj {
+        background-image: url(https://github.com/boillodmanuel/browser-enhancements/raw/master/stylus/assets/family-dark.png);
+    }
+    
+    }
