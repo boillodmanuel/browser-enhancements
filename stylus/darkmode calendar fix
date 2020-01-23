@@ -1,0 +1,8 @@
+@-moz-document domain("calendar.google.com") {
+input.gb_cf {
+    color: white;
+}
+.gb_Re.gb_Se .gb_cf {
+    color: white;
+}
+}
