@@ -1,5 +1,5 @@
 @-moz-document url-prefix("https://mail.google.com/mail/u/0/") {
-    /*
+/*
      * Saved at https://github.com/boillodmanuel/browser-enhancements/blob/master/stylus/gmail-inbox-style-light
      */
     
@@ -133,6 +133,13 @@
     .aeN:not(.bhZ) .HwgYue .TO[data-tooltip="Spam"] .TN { /* not when spam icon is in lower half of the menu */
         background-color: transparent;
     }
+    /** Highligt Brouillons */
+    .aeN:not(.bhZ) .TO[data-tooltip="Brouillons"] .TN { /* when spam icon is in upper half of the menu */
+        background-color: purple;
+    }
+    .aeN:not(.bhZ) .HwgYue .TO[data-tooltip="Brouillons"] .TN { /* not when spam icon is in lower half of the menu */
+        background-color: transparent;
+    }
     /** Hide All Labels */
     .aeN:not(.bhZ) .zw .TO .aio /* labels title */{
         display: none;
@@ -161,5 +168,4 @@
     .aeN:not(.bhZ) .zw .TO[data-tooltip="Family"] .qj {
         background-image: url(https://github.com/boillodmanuel/browser-enhancements/raw/master/stylus/assets/family-dark.png);
     }
-    
-    }
+}
