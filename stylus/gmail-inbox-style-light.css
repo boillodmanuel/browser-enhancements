@@ -105,11 +105,23 @@
     .aeN:not(.bhZ) .TN {
         padding: 0 6px;
     }
+
     .aeN:not(.bhZ) .TK .TO {
         border-radius: 16px;
         width: 32px;
         margin-left: 20px;
     }
+
+    /* Hide right bar (agenda, tasks) */
+    .bAw {
+        display: none;
+    }
+
+    /* Hide google meet when menu is wide */
+    .aeN:not(.bhZ) .YX, .aeN:not(.bhZ) .aeO {
+        display: none;
+    }
+
     
     /* Hide sidebar text */
     .aeN:not(.bhZ) .TN.bzz > .aio /* mains entries */, 
