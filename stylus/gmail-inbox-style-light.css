@@ -92,6 +92,10 @@
         min-width: 80px !important;
     }
     
+    /* + (new email) button */
+    .aeN:not(.bhZ) .z0 {
+        margin-bottom: 20px
+    }
     .aeN:not(.bhZ) .z0>.L3 {
         -webkit-border-radius: 28px;
         border-radius: 28px;
@@ -99,8 +103,10 @@
         height: 56px;
         padding: 0;
         width: 56px;
+        min-width: 56px;
+        
     }
-    
+
     /* Active menu entries with rounded background */
     .aeN:not(.bhZ) .TN {
         padding: 0 6px;
@@ -124,12 +130,14 @@
 
     
     /* Hide sidebar text */
+    .aeN:not(.bhZ) .V6.CL /* messagerie text */,
     .aeN:not(.bhZ) .TN.bzz > .aio /* mains entries */, 
     .aeN:not(.bhZ) .ah9>.CJ /* show more */,
     .aeN:not(.bhZ) .CL>.CK /* gérer les libellés */ {
         display: none !important;
     }
     
+
     /* Hide menu entries when menu is wide */
     .aeN:not(.bhZ) .TN.bzz.aHS-bnw /* stars */,
     .aeN:not(.bhZ) .TN.bzz.aHS-bns /* important */,
