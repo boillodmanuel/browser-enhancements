@@ -64,7 +64,7 @@
         border-radius: 50%;
     
         background-repeat: no-repeat;
-        background-image: url('https://github.com/boillodmanuel/browser-enhancements/raw/master/stylus/inbox-sun.png');
+        background-image: url('https://github.com/boillodmanuel/browser-enhancements/raw/master/stylus/assets/inbox-sun.png');
         background-position-x: center;
         background-position-y: top 10px;
     }
@@ -130,6 +130,7 @@
 
     
     /* Hide sidebar text */
+    /* Supprime Messagerie class="V6 CL W9" */
     .aeN:not(.bhZ) .V6.CL /* messagerie text */,
     .aeN:not(.bhZ) .TN.bzz > .aio /* mains entries */, 
     .aeN:not(.bhZ) .ah9>.CJ /* show more */,
@@ -149,6 +150,7 @@
     /** Highligt SPAM */
     .aeN:not(.bhZ) .TO[data-tooltip="Spam"] .TN { /* when spam icon is in upper half of the menu */
         background-color: red;
+        display: none; /** too much spam, hide spam */
     }
     .aeN:not(.bhZ) .HwgYue .TO[data-tooltip="Spam"] .TN { /* not when spam icon is in lower half of the menu */
         background-color: transparent;
