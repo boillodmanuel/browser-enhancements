@@ -6,15 +6,30 @@ body #awsgnav #nav-menubar, body #awsgnav #nav-menubar .nav-menu, #nav-menu-righ
 }
 
 /* Region filtering */ 
-a.region.available-region[data-region-id=eu-west-2],
-a.region.available-region[data-region-id^=us-],
-a.region.available-region[data-region-id^=ap-],
-a.region.available-region[data-region-id^=ca-],
-a.region.available-region[data-region-id^=eu-central-],
-a.region.available-region[data-region-id^=eu-north-],
-a.region.available-region[data-region-id^=sa-]
+div[data-testid=awsc-nav-regions-menu-content] a[data-region-id=eu-west-2],
+div[data-testid=awsc-nav-regions-menu-content] a[data-region-id^=us-],
+div[data-testid=awsc-nav-regions-menu-content] a[data-region-id^=ap-],
+div[data-testid=awsc-nav-regions-menu-content] a[data-region-id^=ca-],
+div[data-testid=awsc-nav-regions-menu-content] a[data-region-id^=eu-central-],
+div[data-testid=awsc-nav-regions-menu-content] a[data-region-id^=eu-north-],
+div[data-testid=awsc-nav-regions-menu-content] a[data-region-id^=sa-],
+div[data-testid=awsc-nav-regions-menu-content] a[data-region-id^=af-]
 {
-    display: none !important
+    display: none !important;
+}
+
+div[data-testid="awsc-nav-more-menu-item-menu--regions-0"] li {
+    padding-bottom: 0px !important;
+    border-bottom: none !important;
+}
+div[data-testid="awsc-nav-more-menu-item-menu--regions-1"] {
+    display: none !important;
+}
+div[data-testid="awsc-nav-regions-menu-content"] hr {
+    display: none !important;
+}
+div[data-testid="awsc-nav-regions-menu-content"] div[aria-label="Manage Regions"] {
+    display: none !important;
 }
 }
 
